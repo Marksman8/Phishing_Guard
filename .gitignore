@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Runtime artifacts — contain pasted email content
+chroma_db/
+traces/
+escalations.jsonl
+.streamlit/secrets.toml
+
+# WHOIS response cache (reproducible demos, not a source of truth)
+.whois_cache.json

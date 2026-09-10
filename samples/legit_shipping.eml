@@ -1,0 +1,18 @@
+From: Acme Store <orders@acme-store.com>
+Subject: Your order #48217 has shipped
+To: you@example.com
+Authentication-Results: mx.example.com; spf=pass smtp.mailfrom=acme-store.com;
+ dkim=pass header.d=acme-store.com; dmarc=pass header.from=acme-store.com
+
+Hi Sam,
+
+Good news — your order has left our warehouse and is expected to arrive
+on Thursday. You can follow its progress from the Orders page in your
+account whenever you like.
+
+https://www.acme-store.com/account/orders
+
+No action is needed from you. If the delivery date changes we will let
+you know.
+
+The Acme Store team
