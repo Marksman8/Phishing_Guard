@@ -1,10 +1,15 @@
 streamlit==1.40.2
 langgraph==0.2.53
 chromadb==0.5.23
-fastmcp==2.3.4
-mcp==1.9.0
+
+# fastmcp 2.3.4 is incompatible with pydantic >=2.11 ("cannot specify both
+# default and default_factory") and the server fails to import, which makes
+# every tool call return unavailable. 4.x is required.
+fastmcp==4.0.3
+mcp==2.2.0
+
 python-dotenv>=1.1.0
 requests==2.32.3
 google-generativeai==0.8.3
 python-whois==0.9.4
-idna==3.10
+idna>=3.10
